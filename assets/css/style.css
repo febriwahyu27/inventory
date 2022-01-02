@@ -1,0 +1,167 @@
+*{
+  font-family: 'arial';
+}
+
+/*===== LOGIN =====*/
+form#login{
+  width: 40%;
+  margin: 100px auto;
+}
+form#login input{
+  width: 100%;
+  margin: 7px 0;
+  padding: 3px 10px;
+}
+form#login input#btn-login{
+  width: 20%;
+  float: right;
+  border: none;
+  padding: 4px 0;
+}
+
+/*===== NAVBAR =====*/
+nav{
+  display: flex;
+  float: right;
+  width: 80%;
+  height: auto;
+  padding: 9px 0;
+  border-bottom: 1px solid grey;
+}
+nav h3{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav h4{
+  position: absolute;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+nav .menu-btn{
+  width: 2%;
+  height: 35px;
+  display: block;
+  margin: 0 20px 0 20px;
+  padding: 3px 0;
+  cursor: pointer;
+}
+nav .menu-btn hr{
+  height: 2px;
+  width: 100%;
+  margin: 5px 0;
+  background-color: rgb(80, 78, 78);
+}
+
+/*===== MENU =====*/
+.menu{
+  float: left;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  color: white;
+  background-color: #19141a;
+}
+.menu h4{
+  padding: 27px 0;
+  text-align: center;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid grey;
+}
+.menu a, .dropdown-btn{
+  padding: 12px 8px 12px 40px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.menu a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+  background-color: rgba(128, 128, 128, 0.24);
+}
+.menu a.active{
+  color: white;
+  background-color: rgba(128, 128, 128, 0.24);
+}
+.dropdown-container {
+  display: none;
+  padding-left: 10px;
+  transition: .1s ease;
+}
+.dropdown-container a{
+  font-size: 15px;
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/*===== CONTENT =====*/
+.content{
+  height: 100vh;
+  float: right;
+  width: 80%;
+  padding: 40px 20px;
+}
+.content .box-content{
+  position: relative;
+  width: 100%;
+  height: auto !important;
+  padding: 25px 25px;
+  background-color: white;
+}
+.content .box-content h3{
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+.content .box-content table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.content .box-content table th{
+  color: white;
+  background-color: #21130d;
+}
+.content .box-content table th,td{
+  text-align: center;
+  padding: 16px;
+}
+.content .box-content table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+.content .box-content button#btn-modal{
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+.content .box-content input#cari{
+  float: right;
+  padding: 0 5px;
+  margin: 10px 0 20px 0;
+}
+.content .box-content #btn-modal{
+  position: absolute;
+  right: 0;
+  padding: 7px 30px;
+}
+.content .box-content .modal .modal-dialog .modal-content .modal-body form table select{
+  width: 75%;
+  padding: 5px 0;
+}
